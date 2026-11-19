@@ -1,25 +1,27 @@
 # MVP
 
-Status: draft — proposed 2026-11-19, awaiting Angel's `/approved`
+Status: **approved 2026-11-19**
 
 Hackathon deadline: **2026-11-22** (3 days). Everything below runs on Stellar testnet.
 
-## Functional (must ship, pitch demos it end-to-end)
+All features are **functional end-to-end** — no visual-only mocks. Decided 2026-11-19: "un MVP funcional y dando todo, no solo un video."
 
-| # | Feature | Why it is in the MVP | Size | Becomes epic |
+## Features (all functional on testnet)
+
+| # | Feature | What it must actually do | Size | Epic |
 |---|---|---|---|---|
-| 1 | Property catalog with live state (`En fondeo → En trámite → Buscando inquilino → Alquilado → Finalizado`) and a per-property funding progress bar | Without a catalog there is nothing to invest in; the live state is the whole transparency pitch and the hook for the pilot | M | ANT-CATALOG |
-| 2 | Wallet connect + USDC deposit into a Trustless Work escrow for a specific property | This is the "investor buys a fraction" moment — the business does not exist without it. Deposit must land in escrow, not on the SRL wallet, so the legal protection story works | M | ANT-INVEST |
-| 3 | Admin panel: validate the "Inscrito en Derechos Reales" milestone and release escrow to the owner | This is the only moment where legal protection and on-chain state meet; the demo pivots on it | M | ANT-ADMIN |
-| 4 | Monthly distribution button via Pollar to investor wallets | Proves the "small saver gets rent on-chain" loop; without a visible distribution the pitch is theoretical | M | ANT-DISTRIB |
-| 5 | Stellar explorer link per transaction (deposit, release, distribution) | The transparency differentiator over Arrived/RealT/Lofty; cheap to implement, huge pitch value | S | ANT-EXPLORER |
+| 1 | Property catalog with live state (`En fondeo → En trámite → Buscando inquilino → Alquilado → Finalizado`) and per-property funding progress bar | Reads live state from DB; refreshes in real time when on-chain state changes | M | ANT-CATALOG |
+| 2 | Wallet connect + USDC deposit into Trustless Work escrow for a specific property | Real testnet tx into Trustless Work escrow; receipt visible to investor | M | ANT-INVEST |
+| 3 | Admin panel: validate "Inscrito en Derechos Reales" milestone and release escrow to owner | Admin button fires real Trustless Work release from escrow to the owner wallet | M | ANT-ADMIN |
+| 4 | Monthly distribution via Pollar to investor wallets | Admin button fires a real Pollar distribution split across all token holders of the property | M | ANT-DISTRIB |
+| 5 | Stellar explorer link per transaction (deposit, release, distribution) | Every tx surfaces a real link to the Stellar testnet explorer | S | ANT-EXPLORER |
+| 6 | Owner panel: Retirar / Depositar en DeFi / Mixto, with a mandatory risk disclosure per option | Three buttons that execute real testnet txs: `Retirar` moves USDC from released escrow to owner wallet; `DeFi` deposits into a Stellar testnet protocol (Blend or Soroswap LP); `Mixto` is a slider that splits between the two. Each option shows its risk disclosure before signing. | M | ANT-OWNER |
+| 7 | Rollover: at `Finalizado`, migrate holders into a new token series on another `En fondeo` property | Real composite tx — issue new series on target property, burn old series, batch-sign migration from admin for demo wallets (opt-in holder flow is post-pilot) | M | ANT-ROLLOVER |
 
-## Visual-only (pitch assets, no backend)
+## Confirmed fallbacks (Angel approved 2026-11-19)
 
-| # | Feature | Why it is in the MVP | Size | Becomes epic |
-|---|---|---|---|---|
-| 6 | Owner panel mock: withdraw as cash, deploy to DeFi, or mixed — each with its risk disclosure copy | Shows the business model expansion to investors/judges without building rails for it | S | ANT-OWNER-MOCK |
-| 7 | Rollover mock: at `Finalizado`, propose rolling the capital into another anticrético | Shows the LTV story and that we understand lifecycle; costs nothing | S | ANT-ROLLOVER-MOCK |
+- **DeFi backend risk.** If Blend/Soroswap testnet is unstable the Saturday of the hackathon, reduce feature #6 to two buttons: `Retirar` and `Reinvertir en otra anticrético` (which reuses #7's flow). 30-minute switch, no pitch impact.
+- **Rollover in demo.** Demo holders are controlled wallets held by Anticretico; migration is batch-signed from the admin panel. Opt-in holder signature flow is out of MVP and planned post-pilot.
 
 ## Explicitly out
 
@@ -31,3 +33,4 @@ Hackathon deadline: **2026-11-22** (3 days). Everything below runs on Stellar te
 | Fiat on-ramp from BOB to USDC | Users bring USDC. Fiat on-ramps require partnering with a VASP and formal BCB posture — out of pilot scope |
 | Mainnet | Stellar testnet is enough to prove the loop; mainnet requires the SRL to be fully set up and tested, which is post-hackathon |
 | Fixed-yield marketing | Prohibited by product principle in `canon/product.md`; not a feature, a non-negotiable rule |
+| Opt-in rollover signature flow per holder | Needed for real pilot but not for the 3-day demo (see "Confirmed fallbacks") |
