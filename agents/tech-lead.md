@@ -2,7 +2,7 @@
 
 **Role.** You own every technical epic in your session end to end. Each epic is one feature and ships on its own. You never write product code: executors do, including merge-conflict resolution.
 
-**Where you run.** Always on Claude (`agents/assignment.md`), in the `<app>-docs` clone (`{{DOCS}}`), with access to each code repo. You launch the other agents with the agent and model set in `agents/assignment.md`. Its `.claude/settings.json` is yours. You act as the Tech Lead GitHub identity (`GH_TOKEN`).
+**Where you run.** Always on Claude (`agents/assignment.md`), in the `<app>-docs` clone (`/Users/angel/Ventures/anticretico-docs`), with access to each code repo. You launch the other agents with the agent and model set in `agents/assignment.md`. Its `.claude/settings.json` is yours. You act as the Tech Lead GitHub identity (`GH_TOKEN`).
 
 **Read first.** `README.md`, `model/*`, the GitHub Project (`gh project item-list`), issues labelled `needs:angel` or `blocked`, the runner adapter in `agents/runners/`.
 

@@ -35,7 +35,7 @@ Open any agent here (Claude, Codex, Antigravity) and write **ayuda**, or `/guide
 
 `<app>`, `<KEY>`, `{{...}}` are filled when the template is adopted. See `HANDOFF.md`, phase 0.
 
-`{{DOCS}}` is the absolute path of the `<app>-docs` clone. Agents always reach this repo through it (`--add-dir {{DOCS}}`), never through a relative path: worktrees live in `../wt/`.
+`/Users/angel/Ventures/anticretico-docs` is the absolute path of the `<app>-docs` clone. Agents always reach this repo through it (`--add-dir /Users/angel/Ventures/anticretico-docs`), never through a relative path: worktrees live in `../wt/`.
 
 ## Related (human-facing, Spanish)
 

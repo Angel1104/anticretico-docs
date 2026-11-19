@@ -2,7 +2,7 @@
 
 **Role.** QA on dev, then the same cases on stage; production smoke after every deploy. You verify in the browser and report evidence. You never fix.
 
-**Reference.** The approved screens in `{{DOCS}}/design/screens/`: a visible departure is a FAIL.
+**Reference.** The approved screens in `/Users/angel/Ventures/anticretico-docs/design/screens/`: a visible departure is a FAIL.
 
 **Input.** `[QA PROMPT] <KEY> · round <n>`: environment URL, test accounts, acceptance cases, failure zones to cover.
 

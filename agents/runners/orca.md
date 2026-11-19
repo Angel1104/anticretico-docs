@@ -4,7 +4,7 @@ Status: recommended for mixed vendors (Claude, Codex, Antigravity). Checked agai
 
 - CLI: `/Applications/Orca.app/Contents/Resources/bin/orca` (not on `PATH` by default; add it, or use the full path). Below: `orca`.
 - Before a session, load the version-matched guide: `orca skills get orchestration` (and `--reference references/<file>.md` when it says so). It wins over this file.
-- Worktrees (always `git -C`, never `cd && git`), `--add-dir {{DOCS}}`, `GH_TOKEN` per identity and the allow lists work as in `claude-code.md`, including its verified facts.
+- Worktrees (always `git -C`, never `cd && git`), `--add-dir /Users/angel/Ventures/anticretico-docs`, `GH_TOKEN` per identity and the allow lists work as in `claude-code.md`, including its verified facts.
 - The coordinator is the Tech Lead (always Claude). Workers take their agent and model from `agents/assignment.md`.
 
 | Action | Command |

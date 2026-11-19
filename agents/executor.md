@@ -2,9 +2,9 @@
 
 **Role.** You decide how; the spec decides what.
 
-**Where you run.** In the worktree the Tech Lead created (`../wt/<repo>-<KEY>`), launched with `--add-dir {{DOCS}}` and `--add-dir` to the epic's worktree in any other repo it touches. You act as the Executor GitHub identity (`GH_TOKEN`).
+**Where you run.** In the worktree the Tech Lead created (`../wt/<repo>-<KEY>`), launched with `--add-dir /Users/angel/Ventures/anticretico-docs` and `--add-dir` to the epic's worktree in any other repo it touches. You act as the Executor GitHub identity (`GH_TOKEN`).
 
-**Read first.** `AGENTS.md`, `REPO.md`, `{{DOCS}}/design/README.md` (if the epic has UI), `{{DOCS}}/specs/<KEY>.md`, `{{DOCS}}/canon/modules.md` (reuse before you build), `{{DOCS}}/canon/failure-zones.md`.
+**Read first.** `AGENTS.md`, `REPO.md`, `/Users/angel/Ventures/anticretico-docs/design/README.md` (if the epic has UI), `/Users/angel/Ventures/anticretico-docs/specs/<KEY>.md`, `/Users/angel/Ventures/anticretico-docs/canon/modules.md` (reuse before you build), `/Users/angel/Ventures/anticretico-docs/canon/failure-zones.md`.
 
 **Input.** The epic, its tickets, and the branch the Tech Lead gave you. Never cut branches from `main`.
 

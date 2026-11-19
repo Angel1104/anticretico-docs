@@ -19,7 +19,7 @@ Verified 2026-11-16 (Claude Code 2.1.128, local sandbox):
 |---|---|
 | Cut the epic worktree (per repo) | `git -C <repo> fetch origin` · `git -C <repo> worktree add -b epic/<KEY> <wt>/<repo>-<KEY> origin/main` · `git -C <wt>/<repo>-<KEY> push origin epic/<KEY>` |
 | Cut a task worktree (parallel tickets only) | `git -C <repo> worktree add -b task/<KEY>-<x> <wt>/<repo>-<KEY>-<x> epic/<KEY>` |
-| Launch an executor | `cd <wt>/<repo>-<KEY> && claude -p --agent executor --model <sonnet\|opus> --add-dir {{DOCS}} [<wt>/<other-repo>-<KEY>] < <prompt file>` (prompt on stdin; `GH_TOKEN` set in the session environment, not inline) |
+| Launch an executor | `cd <wt>/<repo>-<KEY> && claude -p --agent executor --model <sonnet\|opus> --add-dir /Users/angel/Ventures/anticretico-docs [<wt>/<other-repo>-<KEY>] < <prompt file>` (prompt on stdin; `GH_TOKEN` set in the session environment, not inline) |
 | Launch a ticket worker (parallel tickets only) | Same, in `<wt>/<repo>-<KEY>-<x>` with `--agent ticket-worker` |
 | Executor asks the Tech Lead | Comment `[QUESTION]` on the ticket; the Tech Lead reads it with `gh issue view` |
 | Executor signals done | `[RESULT REPORT]` comment on the PR; process exits |

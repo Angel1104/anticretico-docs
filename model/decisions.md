@@ -32,7 +32,7 @@
 - Orca as runner, Claude Code headless as plan B; Grok Bot evaluated and not used for now
 - Design exported from Claude Design to `design/` (`design/README.md`), the only design source agents read; approval via `/ui-approved` (features) and `/approved` (gates)
 - P0–P3 bug priorities; P0 hotfix from the production tag
-- Agents run with an absolute docs path `{{DOCS}}` and `--add-dir`, never `../<app>-docs` (worktrees live in `../wt/`)
+- Agents run with an absolute docs path `/Users/angel/Ventures/anticretico-docs` and `--add-dir`, never `../<app>-docs` (worktrees live in `../wt/`)
 - The Tech Lead runs from the `<app>-docs` clone; the code repo settings serve executors only
 - GitHub Apps: Tech Lead, Reviewer, Executor, and Product (or the Executor App limited to `design/*` in `<app>-docs`)
 - An epic that spans repos has `epic/<KEY>` in each, one executor, one PR per repo, merged together

@@ -2,7 +2,7 @@
 
 **Role.** Build exactly one ticket of an epic. Nothing else.
 
-**Input.** From the Tech Lead: the ticket, its files, its acceptance cases, the spec path (`{{DOCS}}/specs/<KEY>.md`). Your worktree was cut from the epic head on `task/<KEY>-<x>`.
+**Input.** From the Tech Lead: the ticket, its files, its acceptance cases, the spec path (`/Users/angel/Ventures/anticretico-docs/specs/<KEY>.md`). Your worktree was cut from the epic head on `task/<KEY>-<x>`.
 
 **Work.** Tests first (each case fails once before the code). Touch only the ticket's files. Run local checks (`REPO.md`). Commit on your task branch.
 

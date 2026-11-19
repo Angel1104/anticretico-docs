@@ -41,7 +41,7 @@ Set up a pilot of this delivery model on a NEW, small, real app (not Shipdrive).
 - [ ] Create the GitHub Project as in `model/project.md` (issue types, fields, views, labels from `.github/labels.json`).
 - [ ] Rulesets: `main` (merge only by Tech Lead identity, required checks, required review by reviewer identity); tags `v*` (Angel + Tech Lead bot).
 - [ ] Identities: GitHub Apps (or fine-grained tokens) for Tech Lead, Reviewer and Executor (`model/access.md`).
-- [ ] Clone `<app>-docs` and the code repos side by side; replace `{{DOCS}}` everywhere with the absolute path of the docs clone.
+- [ ] Clone `<app>-docs` and the code repos side by side; replace `/Users/angel/Ventures/anticretico-docs` everywhere with the absolute path of the docs clone.
 - [ ] Copy `code-repo-kit/` into each code repo; fill `REPO.md`; copy its commands into the `allow` list of `.claude/settings.json`.
 - [ ] `<app>-docs` secrets/variables: `ANTHROPIC_API_KEY`, `APPROVER_LOGIN`. Create labels from `.github/labels.json`.
 - [ ] Fill `canon/architecture.md`, including the shared registry files.

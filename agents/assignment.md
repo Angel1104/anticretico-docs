@@ -22,7 +22,7 @@ Rules:
 | Agent | Repo rules | Agent role file | Permissions |
 |---|---|---|---|
 | Claude | `CLAUDE.md` (imports `AGENTS.md`) | `.claude/agents/<role>.md` → `agents/<role>.md` | `.claude/settings.json` |
-| Codex | `AGENTS.md` (native) | Prompt from the runner: "Read `{{DOCS}}/agents/<role>.md`" | Codex config / sandbox ({{verify}}) |
+| Codex | `AGENTS.md` (native) | Prompt from the runner: "Read `/Users/angel/Ventures/anticretico-docs/agents/<role>.md`" | Codex config / sandbox ({{verify}}) |
 | Antigravity | {{verify which file it reads}} | Prompt from the runner | {{verify}} |
 
 In every case the real guard is GitHub (identities and rulesets, `model/access.md`), so it does not depend on the agent.
