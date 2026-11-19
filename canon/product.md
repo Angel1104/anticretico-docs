@@ -1,10 +1,28 @@
 # Product
 
-> Fill before the first epic. The Product agent's briefs are only as good as this file.
-
-- **What the app does (one paragraph):** {{...}}
-- **Who uses it (roles):** {{...}}
-- **The main action a user comes to do:** {{...}}
-- **What it must never do:** {{...}}
-- **Locales:** {{es, en}}
-- **Glossary:** {{term — meaning}}
+- **What the app does (one paragraph):** Anticretico fractionalises the Bolivian *anticrético* real-estate instrument. A Bolivian SRL acts as *anticresista* on a property (USD 10,000–40,000 posted as a lien inscribed in Derechos Reales); small investors buy on-chain economic tokens on Stellar from 1,000 USDC, the escrow for the owner's cash is held in Trustless Work and only released once the lien is inscribed, and monthly rent is distributed to investor wallets via Pollar. The platform exposes the live state of each property (En fondeo → En trámite → Buscando inquilino → Alquilado → Finalizado) and a Stellar explorer link per transaction. Yield is variable and never promised as fixed.
+- **Who uses it (roles):**
+  - Investor (small saver or foreigner): wires USDC, holds economic tokens, receives monthly distributions.
+  - Owner / anticresista counterparty (Bolivian property owner): posts the property, receives the lump-sum release from escrow once the lien is inscribed, pays monthly rent to the SRL.
+  - Tenant (not a direct app user in MVP, but their rent flows through the system): pays monthly rent.
+  - Admin (Anticretico operator): validates the "Inscrito en Derechos Reales" milestone and releases escrow; runs manual KYC in MVP.
+- **The main action a user comes to do:**
+  - Investor: buy a fraction of an anticrético from 1,000 USDC and watch rent distributions land on their wallet.
+  - Owner: list a property, get funded, and receive the lump sum on-chain with legal backing.
+  - Admin: validate the Derechos Reales inscription and release the escrow; trigger the monthly distribution.
+- **What it must never do:**
+  - Promise a fixed yield. Yield is always framed as variable and tied to rent, zone and vacancy.
+  - Release the owner escrow before the anticrético is inscribed in Derechos Reales (that is the only legal protection the investor has).
+  - Onboard investors or owners without manual KYC in MVP (UIF RA 019/2025 is mandatory).
+  - Operate outside Bolivia or in fiat rails outside USDC (BCB RD 082/2024 is the legal rail for MVP).
+- **Locales:** `es-BO` (primary), `en` (secondary, mainly for foreign investors).
+- **Glossary:**
+  - **Anticrético** — Bolivian property contract where a lump sum of cash is posted as a lien on a property; the owner uses the property (or its rent) and returns the full cash at the end. Must be inscribed in Derechos Reales to be enforceable.
+  - **Derechos Reales** — Bolivian public registry where the anticrético lien is inscribed; the inscription is the legal protection for the capital.
+  - **SRL anticresista** — Bolivian limited-liability company that acts as the legal anticresista counterparty on-chain investors back.
+  - **Economic token** — Stellar-native asset issued by the SRL that represents a share of the rent distribution; not a security claim on the property itself (regulatory path clarifies this).
+  - **Trustless Work** — escrow protocol on Stellar used to hold investor USDC until the Derechos Reales milestone is validated.
+  - **Pollar** — Stellar distribution tool used to split monthly rent across token holders.
+  - **ASFI sandbox** — Bolivian financial authority sandbox (DS 5384 + Resolución 540/2025); the regulatory path after the closed pilot.
+  - **UIF RA 019/2025** — Bolivian anti-money-laundering resolution; mandates KYC on investors and owners.
+  - **BCB RD 082/2024** — Bolivian central-bank resolution that made USDC legal for domestic payments.
