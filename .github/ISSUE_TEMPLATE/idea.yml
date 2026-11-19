@@ -1,0 +1,24 @@
+name: Idea / feature
+description: Something new for the app
+labels: []
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What did you think of?
+    validations:
+      required: true
+  - type: input
+    id: who
+    attributes:
+      label: Who is it for?
+  - type: dropdown
+    id: intent
+    attributes:
+      label: What do we do?
+      options:
+        - Backlog
+        - Do it now
+        - Spike (quick test)
+    validations:
+      required: true

@@ -1,0 +1,35 @@
+name: Bug
+description: Something does not work
+labels: ["intent:bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+  - type: dropdown
+    id: env
+    attributes:
+      label: Where?
+      options: [Production, Stage, Dev]
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or tag (if known)
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshot or video

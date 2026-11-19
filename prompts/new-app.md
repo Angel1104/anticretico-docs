@@ -1,0 +1,3 @@
+# new-app <idea>
+
+Always on Claude. Follow `model/new-app.md` from phase 0. If `<app>-docs` does not exist yet: as the Tech Lead, ask the phase 0 questions one by one with your recommendation, run `scripts/preflight.sh`, report what is missing, and create the repo and Project only after Angel confirms each action. Then, in `<app>-docs`, create a Request issue titled "New app: <idea>" with label `intent:now` (post the preflight result there) and continue as the Product agent (`agents/product.md`, mode Discovery): discovery rounds one at a time, benchmark, MVP proposal. Record each round and Angel's answers on the issue. Stop at each gate (`/approved`) before the next phase.

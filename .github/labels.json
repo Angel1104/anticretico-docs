@@ -1,0 +1,18 @@
+[
+  {"name": "intent:backlog", "color": "c5def5"},
+  {"name": "intent:now", "color": "1d76db"},
+  {"name": "intent:spike", "color": "bfdadc"},
+  {"name": "intent:bug", "color": "d93f0b"},
+  {"name": "needs:angel", "color": "e07b2e"},
+  {"name": "blocked", "color": "000000"},
+  {"name": "sev:low", "color": "0e8a16"},
+  {"name": "sev:med", "color": "fbca04"},
+  {"name": "sev:high", "color": "b60205"},
+  {"name": "bug:dev", "color": "f9d0c4"},
+  {"name": "bug:stage", "color": "f9d0c4"},
+  {"name": "bug:prod", "color": "b60205"},
+  {"name": "ui:approved", "color": "0e8a16"},
+  {"name": "approved", "color": "0e8a16"},
+  {"name": "product:started", "color": "ededed"},
+  {"name": "accepted", "color": "0e8a16"}
+]

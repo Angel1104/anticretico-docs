@@ -1,0 +1,68 @@
+# Routes new requests and runs the Product agent once per `intent:now` request.
+# - Idea form: maps the "What do we do?" dropdown to an `intent:*` label (forms cannot set labels).
+# - Any request with `intent:now` (form, /feature, promotion): runs the Product agent once (brief only),
+#   guarded by the label `product:started`. Runs serialise per issue, so opened+labeled cannot double-run.
+# Product runs in "brief only" mode here: Claude Design is not available in Actions.
+# Needs: secret ANTHROPIC_API_KEY. Verify the claude-code-action inputs in phase 0.
+name: intake
+on:
+  issues:
+    types: [opened, labeled]
+concurrency:
+  group: intake-${{ github.event.issue.number }}
+  cancel-in-progress: false
+permissions:
+  contents: read
+  issues: write
+jobs:
+  route:
+    if: github.event.action == 'opened' || github.event.label.name == 'intent:now'
+    runs-on: ubuntu-latest
+    outputs:
+      run_product: ${{ steps.route.outputs.run_product }}
+    steps:
+      - id: route
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.issue.number }}
+        run: |
+          labels=$(gh issue view "$NUMBER" --repo "$REPO" --json labels --jq '[.labels[].name] | join(",")')
+          if ! grep -q 'intent:' <<<"$labels"; then
+            body=$(gh issue view "$NUMBER" --repo "$REPO" --json body --jq .body | tr -d '\r')
+            choice=$(awk '/^### What do we do\?/{getline; getline; print; exit}' <<<"$body")
+            case "$choice" in
+              "Backlog") label=intent:backlog ;;
+              "Do it now") label=intent:now ;;
+              "Spike (quick test)") label=intent:spike ;;
+              *) label="" ;;
+            esac
+            if [ -n "$label" ]; then
+              gh issue edit "$NUMBER" --repo "$REPO" --add-label "$label"
+              labels="$labels,$label"
+            fi
+          fi
+          run=false
+          if grep -q 'intent:now' <<<"$labels" && ! grep -q 'product:started' <<<"$labels"; then
+            gh issue edit "$NUMBER" --repo "$REPO" --add-label "product:started"
+            run=true
+          fi
+          echo "run_product=$run" >> "$GITHUB_OUTPUT"
+
+  product:
+    needs: route
+    if: needs.route.outputs.run_product == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ github.token }}
+          prompt: |
+            You are the Product agent in "brief only" mode. Read agents/product.md in this repository completely and follow it.
+            Request: issue #${{ github.event.issue.number }} in ${{ github.repository }}.
+            Post the brief and the numbered business questions on the issue. Do not design: say the design follows in a Claude session if the feature has UI.
+            Add the label needs:angel.
+          claude_args: --model opus --max-turns 30
