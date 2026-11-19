@@ -19,6 +19,8 @@ The property lifecycle state, shown wherever a property appears.
 
 `En trámite` is the only state painted in gold — it marks the Derechos Reales inscription window, the brand-defining moment.
 
+`En fondeo` and `Buscando inquilino` deliberately share `state-info` blue; they never appear on the same screen so the collision is impossible and the label disambiguates. See `decisions/001-design-trade-offs.md`.
+
 ## Shape
 
 - Pill: `radius.pill`, height 24, padding-x `spacing.3` (12).

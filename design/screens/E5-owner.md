@@ -27,10 +27,10 @@ Epic: owner chooses Retirar / DeFi / Mixto with risk disclosure; at Finalizado, 
 │  │ [icon wallet]      ││ [icon stack]    ││[icon %] ││
 │  │                    ││                 ││         ││
 │  │ Envía el USDC a tu ││ Deposita en     ││ Divide  ││
-│  │ wallet. Pierdes    ││ Blend o Soroswap││ entre   ││
-│  │ exposición a la    ││ (testnet). Puede││ los dos ││
-│  │ renta.             ││ generar yield   ││ con un  ││
-│  │                    ││ variable extra. ││ slider. ││
+│  │ wallet. Pierdes    ││ Blend (testnet).││ entre   ││
+│  │ exposición a la    ││ Puede generar   ││ los dos ││
+│  │ renta.             ││ yield variable  ││ con un  ││
+│  │                    ││ extra.          ││ slider. ││
 │  │                    ││                 ││         ││
 │  │ [Risk withdraw-cash]││[Risk defi-prot.]││[Risk mix]│
 │  │                    ││                 ││         ││
@@ -46,7 +46,7 @@ Epic: owner chooses Retirar / DeFi / Mixto with risk disclosure; at Finalizado, 
 
 Each option opens its own confirmation modal:
 - `Retirar`: confirmWord = `RETIRAR`. Sends all USDC to the owner wallet.
-- `DeFi`: confirmWord = `DEPOSITAR`. Shows protocol (Blend or Soroswap LP) + expected pool composition + confirm.
+- `DeFi`: confirmWord = `DEPOSITAR`. Shows protocol (Blend on testnet, locked — see `decisions/001-design-trade-offs.md`) + expected pool composition + confirm.
 - `Mixto`: opens a slider screen first (see below).
 
 #### Mixto slider
@@ -74,7 +74,7 @@ Acceptance:
 - Each option shows its required `RiskDisclosure`.
 - The three options together always sum to the full released amount.
 - All txs are real testnet and surface `ExplorerLink`s.
-- If Blend/Soroswap testnet health-check fails on the owner panel load, the `DeFi` card hides and `Mixto` disables with copy "DeFi no disponible; te sugerimos reinvertir en otra anticrético." The `Reinvertir` button in that fallback routes to `E5-02-Rollover`.
+- If Blend testnet health-check fails on the owner panel load, the `DeFi` card hides and `Mixto` disables with copy "DeFi no disponible; te sugerimos reinvertir en otra anticrético." The `Reinvertir` button in that fallback routes to `E5-02-Rollover`.
 
 ### E5-02-Rollover
 

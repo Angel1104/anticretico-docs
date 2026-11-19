@@ -53,7 +53,7 @@ Investor catalog at `/propiedades`. Auth optional (browse anonymously, but inves
 │  Propiedades                                           │
 │  {N} propiedades · filtradas por {ciudad}              │
 │                                                        │
-│  [Filtros: Ciudad · Estado · Ticket mínimo]            │
+│  (filtros out of v0 — see decisions/001)               │
 │                                                        │
 │  ┌──────────┐  ┌──────────┐  ┌──────────┐              │
 │  │ Property │  │ Property │  │ Property │              │
@@ -66,12 +66,7 @@ Investor catalog at `/propiedades`. Auth optional (browse anonymously, but inves
 └────────────────────────────────────────────────────────┘
 ```
 
-Components: `Nav`, filter bar (3 `Select`s — note: `Select` not in MVP system, so for hackathon filters reduce to **plain inputs**, see note), `PropertyCard` grid.
-
-Hackathon note: the `Select` component is not in `design/system/`. For MVP, filters render as:
-- `Ciudad` → chips row (`La Paz`, `Santa Cruz`, `Cochabamba`, `Sucre`) — toggleable chips are a `StatePill`-shaped primitive but non-canonical. **Stop-and-report if the executor hits this** — recommended path: ship catalog without filters in v0 and add them in v1.
-- `Estado` → same chip approach, using the canonical state strings.
-- `Ticket mínimo` → simple `Input variant="number-usdc"`.
+Components: `Nav`, `PropertyCard` grid. **No filters in v0** — decision locked in `decisions/001-design-trade-offs.md`. Filters (`Ciudad` / `Estado` / `Ticket mínimo`) ship as a post-pilot epic once the `Select` component is added to the system.
 
 Acceptance:
 - Grid renders at least 6 properties with varied states.
