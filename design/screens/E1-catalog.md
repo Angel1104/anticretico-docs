@@ -10,11 +10,11 @@ Public home at `/`. No auth, no testnet banner (landing is marketing).
 
 ```
 ┌────────────────────────────────────────────────────────┐
-│ [Anticretico]              [ES EN]   [Conectar wallet] │
+│ [Llavero]                  [ES EN]   [Conectar wallet] │
 ├────────────────────────────────────────────────────────┤
 │                                                        │
 │    Invierte en anticréticos bolivianos                 │
-│    desde 1.000 USDC.                                   │
+│    desde 100 USDC.                                     │
 │                                                        │
 │    Rendimiento variable. Protegido por                 │
 │    Derechos Reales. On-chain en Stellar.               │
@@ -117,7 +117,7 @@ Acceptance:
 │                                                        │
 │  Historial on-chain                                    │
 │  • Serie emitida · [ExplorerLink tx]                   │
-│  • Inversión #1 · 1.000 USDC · [ExplorerLink tx]       │
+│  • Inversión #1 · 100 USDC · [ExplorerLink tx]         │
 │  • ...                                                 │
 └────────────────────────────────────────────────────────┘
 ```

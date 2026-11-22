@@ -1,4 +1,4 @@
-# <app>-docs — Agent delivery model (template)
+# Llavero docs — Agent delivery model
 
 This repository is the single source of truth for how an app is built with AI agents, and for what the app is. It is agent-agnostic: Claude, Codex or Antigravity, per `agents/assignment.md`. A new app starts with `model/new-app.md`.
 Copy it as `<app>-docs` for each new app. Agents read this repo; they do not read Jira or Confluence.

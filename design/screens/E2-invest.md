@@ -29,7 +29,7 @@ Four steps, all inside a single centred card (420 wide, `shadow.modal`, `bg-elev
 │                                         │
 │ Monto                                   │
 │ [Input variant="number-usdc"] [USDC]    │
-│ Mínimo 1.000 USDC                       │
+│ Mínimo 100 USDC                         │
 │                                         │
 │ Tu posición será una fracción de la     │
 │ anticrético, con rendimiento variable.  │

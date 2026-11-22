@@ -21,7 +21,7 @@ All features are **functional end-to-end** — no visual-only mocks. Decided 202
 ## Confirmed fallbacks (Angel approved 2026-11-19)
 
 - **DeFi backend risk.** If Blend/Soroswap testnet is unstable the Saturday of the hackathon, reduce feature #6 to two buttons: `Retirar` and `Reinvertir en otra anticrético` (which reuses #7's flow). 30-minute switch, no pitch impact.
-- **Rollover in demo.** Demo holders are controlled wallets held by Anticretico; migration is batch-signed from the admin panel. Opt-in holder signature flow is out of MVP and planned post-pilot.
+- **Rollover in demo.** Demo holders are controlled wallets held by Llavero; migration is batch-signed from the admin panel. Opt-in holder signature flow is out of MVP and planned post-pilot.
 
 ## Explicitly out
 

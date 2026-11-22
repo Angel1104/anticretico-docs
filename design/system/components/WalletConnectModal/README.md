@@ -32,7 +32,7 @@ Modal to connect a Stellar wallet (testnet in MVP).
 
 ## Risk disclosure
 
-- Fixed copy at the bottom before the install link: "Al conectar, autorizas a Anticretico a leer tu wallet. Nunca pedimos tu frase semilla." — `font-size-xs` 12 / `color.text-muted`.
+- Fixed copy at the bottom before the install link: "Al conectar, autorizas a Llavero a leer tu wallet. Nunca pedimos tu frase semilla." — `font-size-xs` 12 / `color.text-muted`.
 
 ## Do not
 

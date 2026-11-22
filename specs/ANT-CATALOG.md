@@ -4,7 +4,7 @@
 
 ## What (never how)
 
-Ship the three public screens that let a visitor see the Anticretico MVP: a landing explaining the model, a catalog of properties with live state, and a detail view with the funding bar and the Invertir CTA (disabled; ANT-INVEST fills it). Everything reads live from Supabase; state transitions push into the UI in real time. Also stand up the shared infra that other epics will reuse: Tailwind-v4 + tokens sync, next-intl with `es-BO` + `en`, Supabase client, 6-property seed.
+Ship the three public screens that let a visitor see the Llavero MVP: a landing explaining the model, a catalog of properties with live state, and a detail view with the funding bar and the Invertir CTA (disabled; ANT-INVEST fills it). Everything reads live from Supabase; state transitions push into the UI in real time. Also stand up the shared infra that other epics will reuse: Tailwind-v4 + tokens sync, next-intl with `es-BO` + `en`, Supabase client, 6-property seed.
 
 ## Acceptance criteria and test cases
 

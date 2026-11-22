@@ -6,7 +6,7 @@ If and when claude.ai Design System artifacts are created post-hackathon, this t
 
 | Artifact | URL | Version pulled | Pulled at |
 |---|---|---|---|
-| `Anticretico` (design system) | — | — | — |
-| `Anticretico · Pantallas` (screens) | — | — | — |
+| `Llavero` (design system) | — | — | — |
+| `Llavero · Pantallas` (screens) | — | — | — |
 
 Reason this is empty: Phase 2 decision B taken on 2026-11-19 — build design-in-repo for hackathon speed, defer claude.ai artifacts to post-pilot.
