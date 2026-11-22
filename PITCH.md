@@ -38,6 +38,17 @@ Llavero permite que varias personas cofinancien un anticrético en Bolivia desde
 
 ## Credibilidad técnica
 
-- Transacciones reales y exitosas en Stellar Testnet: [inversión `17c35e…5b3d`](https://stellar.expert/explorer/testnet/tx/17c35e332ddfb683f5a965b2cd25d9d7d7de8c0f608c431230a984981a625b3d), [liberación `7f0912…730f`](https://stellar.expert/explorer/testnet/tx/7f09124bdf277d10b680ea727827b40a039356be0de3cba59b4b021af469730f) y [distribución `88c877…ffc6`](https://stellar.expert/explorer/testnet/tx/88c8777511ec980371e9e1bc9541845dd09b1d8cfecaaaa9754ceaef98c3ffc6).
+- Transacciones reales y exitosas en Stellar Testnet: [inversión `17c35e332ddfb683f5a965b2cd25d9d7d7de8c0f608c431230a984981a625b3d`](https://stellar.expert/explorer/testnet/tx/17c35e332ddfb683f5a965b2cd25d9d7d7de8c0f608c431230a984981a625b3d), [liberación `7f09124bdf277d10b680ea727827b40a039356be0de3cba59b4b021af469730f`](https://stellar.expert/explorer/testnet/tx/7f09124bdf277d10b680ea727827b40a039356be0de3cba59b4b021af469730f) y [distribución `88c8777511ec980371e9e1bc9541845dd09b1d8cfecaaaa9754ceaef98c3ffc6`](https://stellar.expert/explorer/testnet/tx/88c8777511ec980371e9e1bc9541845dd09b1d8cfecaaaa9754ceaef98c3ffc6).
 - Supabase Realtime escucha cambios de `properties` y actualiza estado y fondeo del catálogo sin recargar la página.
 - Freighter firma las transacciones del inversionista y del owner, bloquea redes distintas de Testnet y conserva la misma wallet para dashboard y control de acceso admin; las acciones operativas de admin usan cuentas servidoras autorizadas.
+
+## Equipo + autoría
+
+Detalle completo en [TEAM.md](TEAM.md).
+
+- **Angel Flores — Tech Lead:** arquitectura, código del MVP (app Next.js, integración Stellar/Freighter, Supabase Realtime), demo técnica y despliegue en testnet.
+- **Cecilia Flores — Producto, Legal y Negocio:** análisis legal boliviano (anticresis en el Código Civil, Ley 393, DS 5384, RD 082/2024 del BCB), modelo de negocio, investigación y sizing de mercado, entrevistas de validación y narrativa del pitch deck.
+
+## Validación
+
+El marco legal trabajado, los scripts de entrevista con ahorristas y propietarios, los hallazgos, el sizing bottom-up del nicho en Santa Cruz y la economía del piloto están en [VALIDATION.md](VALIDATION.md).
