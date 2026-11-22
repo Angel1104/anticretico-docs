@@ -1,4 +1,4 @@
-# Anticretico — Design System
+# Llavero — Design System
 
 ## Principles
 
@@ -6,7 +6,7 @@
 2. **Legally first, financially second.** The Derechos Reales milestone is the biggest moment in the UI: large copy, distinct state, admin confirmation modal. Yield numbers never dominate the inscription state visually.
 3. **Variable, never promised.** Any yield-shaped number is prefixed "variable" or shown as a historical range. No hero number without the word *variable* within 1 line of it.
 4. **Bolivian-native, not translated-from-US.** Use *anticrético*, *Derechos Reales*, *SRL anticresista*, *BOB*, *USDC* as first-class nouns. Do not say "property-backed loan" or "token-backed security"; those are legal re-framings that distort the product.
-5. **Dark navy and gold.** The brand is the lien and the inscription, not the token. Navy for seriousness, gold for the moment of value (funding progress, CTAs, inscribed state).
+5. **Cream, navy, magenta, mustard and lavender.** The brand is the lien and the inscription, not the token. Cream is the primary surface, navy carries serious content, magenta marks primary actions, mustard signals attention and lavender supports informational states.
 
 ## Voice
 

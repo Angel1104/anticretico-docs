@@ -2,11 +2,11 @@
 
 Date: 2026-11-19
 Status: Accepted (Angel `/ui-approved` 2026-11-19)
-Scope: Anticretico MVP, Stellar testnet, hackathon deadline 2026-11-22.
+Scope: Llavero MVP, Stellar testnet, hackathon deadline 2026-11-22.
 
 ## Context
 
-Phase 2 of `model/new-app.md` produced the Anticretico design system and 8 MVP screens directly in `design/` (path B decided 2026-11-19, no claude.ai artifact round-trip). Three trade-offs surfaced during review that needed Angel's call before Phase 3.
+Phase 2 of `model/new-app.md` produced the Llavero design system and 8 MVP screens directly in `design/` (path B decided 2026-11-19, no claude.ai artifact round-trip). Three trade-offs surfaced during review that needed Angel's call before Phase 3.
 
 ## Decisions
 

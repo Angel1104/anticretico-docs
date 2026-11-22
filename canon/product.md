@@ -1,13 +1,13 @@
 # Product
 
-- **What the app does (one paragraph):** Anticretico fractionalises the Bolivian *anticrético* real-estate instrument. A Bolivian SRL acts as *anticresista* on a property (USD 10,000–40,000 posted as a lien inscribed in Derechos Reales); small investors buy on-chain economic tokens on Stellar from 1,000 USDC, the escrow for the owner's cash is held in Trustless Work and only released once the lien is inscribed, and monthly rent is distributed to investor wallets via Pollar. The platform exposes the live state of each property (En fondeo → En trámite → Buscando inquilino → Alquilado → Finalizado) and a Stellar explorer link per transaction. Yield is variable and never promised as fixed.
+- **What the app does (one paragraph):** Llavero fractionalises the Bolivian *anticrético* real-estate instrument. A Bolivian SRL acts as *anticresista* on a property (USD 10,000–40,000 posted as a lien inscribed in Derechos Reales); small investors buy on-chain economic tokens on Stellar from 100 USDC, the escrow for the owner's cash is held in Trustless Work and only released once the lien is inscribed, and monthly rent is distributed to investor wallets via Pollar. The platform exposes the live state of each property (En fondeo → En trámite → Buscando inquilino → Alquilado → Finalizado) and a Stellar explorer link per transaction. Yield is variable and never promised as fixed.
 - **Who uses it (roles):**
   - Investor (small saver or foreigner): wires USDC, holds economic tokens, receives monthly distributions.
   - Owner / anticresista counterparty (Bolivian property owner): posts the property, receives the lump-sum release from escrow once the lien is inscribed, pays monthly rent to the SRL.
   - Tenant (not a direct app user in MVP, but their rent flows through the system): pays monthly rent.
-  - Admin (Anticretico operator): validates the "Inscrito en Derechos Reales" milestone and releases escrow; runs manual KYC in MVP.
+  - Admin (Llavero operator): validates the "Inscrito en Derechos Reales" milestone and releases escrow; runs manual KYC in MVP.
 - **The main action a user comes to do:**
-  - Investor: buy a fraction of an anticrético from 1,000 USDC and watch rent distributions land on their wallet.
+  - Investor: buy a fraction of an anticrético from 100 USDC and watch rent distributions land on their wallet.
   - Owner: list a property, get funded, and receive the lump sum on-chain with legal backing.
   - Admin: validate the Derechos Reales inscription and release the escrow; trigger the monthly distribution.
 - **What it must never do:**

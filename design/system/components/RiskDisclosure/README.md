@@ -21,7 +21,7 @@ Required risk-copy block shown before any destructive or legally-sensitive actio
 | `invest-variable-yield` | El rendimiento es variable. Depende del alquiler, la zona y la ocupación. Nunca garantizado. |
 | `invest-testnet` | Estás operando en Stellar Testnet. Los USDC son de prueba, sin valor real. |
 | `withdraw-cash` | Al retirar, los USDC salen del sistema. Pierdes exposición al alquiler futuro de este anticrético. |
-| `defi-protocol-risk` | El protocolo DeFi puede fallar o ser hackeado. Anticretico no cubre pérdidas on-chain. |
+| `defi-protocol-risk` | El protocolo DeFi puede fallar o ser hackeado. Llavero no cubre pérdidas on-chain. |
 | `mixed-split` | Divides tu capital entre retiro y DeFi. Cada parte asume su propio riesgo. |
 | `release-escrow` | Al liberar, el escrow se envía al dueño. Solo haz esto después de confirmar la inscripción en Derechos Reales. |
 | `distribute-monthly` | Esta distribución es irreversible. Los USDC se envían a los holders en una única transacción. |

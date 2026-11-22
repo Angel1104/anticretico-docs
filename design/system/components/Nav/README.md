@@ -5,7 +5,7 @@ Top navigation bar for every app page (not landing — landing has its own simpl
 ## Anatomy
 
 - Fixed top, height 72, `bg-elevated`, 1px bottom border `color.border`.
-- Left: Anticretico logo (gold wordmark, 20 tall).
+- Left: Llavero logo (20 tall).
 - Centre: links depending on role.
   - Investor: `Propiedades`, `Mi dashboard`.
   - Owner: `Mis propiedades`, `Panel owner`.
